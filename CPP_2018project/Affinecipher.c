@@ -7,24 +7,22 @@
 //
 
 #include <stdio.h>
-
-const int KEYONE = 12;
-const int KEYTWO = 8;
-
+const int KEYONE = 3;
+const int KEYTWO = 15;
+const int STR_LENGTH = 20;
 
 char *AffineCipther (char *, int, int, int);
 char *DAffineCipther (char *, int, int, int);
 
 int main()
 {
-    const int STR_LENGTH = 12;
-    char str[STR_LENGTH] = "AFFINECIPHER";
+    char str[STR_LENGTH] = "InformationSecurity";
     
-    
+    printf("%s\n", str);
     AffineCipther(str, STR_LENGTH, KEYONE, KEYTWO);
-    printf("%s", str);
+    printf("%s\n", str);
     DAffineCipther(str, STR_LENGTH, KEYONE, KEYTWO);
-    printf("%s", str);
+    printf("%s\n", str);
     
     return 0;
 }
@@ -75,7 +73,14 @@ char *DAffineCipther (char *str, int str_size, int keyone, int keytwo)
             str[i] -= 'A';
             
             // 원함수의 역
-            tmp = ( 26 - keyone ) * ( str[i] - keytwo );
+            int arckeyone = 0;
+            // 키에 대한 역 함수 구하기
+            int cnt = 0;
+            while( ((keyone * cnt) % 26) != 1) {
+                cnt++;
+            }
+            arckeyone = cnt;
+            tmp = arckeyone * ( str[i] - keytwo );
             
             while (tmp < 0) {
                 tmp += 26;
@@ -88,7 +93,15 @@ char *DAffineCipther (char *str, int str_size, int keyone, int keytwo)
         else if ( (str[i] >='a') && (str[i] <= 'z') ){
             str[i] -= 'a';
             
-            tmp = ( 26 - keyone ) * ( str[i] - keytwo );
+            // 원함수의 역
+            int arckeyone = 0;
+            // 키에 대한 역 함수 구하기
+            int cnt = 0;
+            while( ((keyone * cnt) % 26) != 1) {
+                cnt++;
+            }
+            arckeyone = cnt;
+            tmp = arckeyone * ( str[i] - keytwo );
             
             while ( tmp < 0) {
                 tmp += 26;
