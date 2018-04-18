@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8935FE2F20876FC900BA71ED /* OvertwoKeylessTranspositionCipher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8935FE2E20876FC900BA71ED /* OvertwoKeylessTranspositionCipher.cpp */; };
+		8935FE312087714C00BA71ED /* Affinecipher.c in Sources */ = {isa = PBXBuildFile; fileRef = 8935FE302087714C00BA71ED /* Affinecipher.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 		89168EFB207613DC002977AB /* CPP_2018project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP_2018project; sourceTree = BUILT_PRODUCTS_DIR; };
 		89168F0C20763AB5002977AB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		89168F0D20763B2B002977AB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8935FE2E20876FC900BA71ED /* OvertwoKeylessTranspositionCipher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OvertwoKeylessTranspositionCipher.cpp; sourceTree = "<group>"; };
+		8935FE302087714C00BA71ED /* Affinecipher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Affinecipher.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		89168EFD207613DC002977AB /* CPP_2018project */ = {
 			isa = PBXGroup;
 			children = (
-				8935FE2E20876FC900BA71ED /* OvertwoKeylessTranspositionCipher.cpp */,
+				8935FE302087714C00BA71ED /* Affinecipher.c */,
 			);
 			path = CPP_2018project;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8935FE2F20876FC900BA71ED /* OvertwoKeylessTranspositionCipher.cpp in Sources */,
+				8935FE312087714C00BA71ED /* Affinecipher.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

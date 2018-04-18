@@ -11,23 +11,23 @@ const int KEYONE = 3;
 const int KEYTWO = 15;
 const int STR_LENGTH = 20;
 
-char *AffineCipther (char *, int, int, int);
-char *DAffineCipther (char *, int, int, int);
+char *AffineCipher (char *, int, int, int);
+char *DAffineCipher (char *, int, int, int);
 
 int main()
 {
     char str[STR_LENGTH] = "InformationSecurity";
     
     printf("%s\n", str);
-    AffineCipther(str, STR_LENGTH, KEYONE, KEYTWO);
+    AffineCipher(str, STR_LENGTH, KEYONE, KEYTWO);
     printf("%s\n", str);
-    DAffineCipther(str, STR_LENGTH, KEYONE, KEYTWO);
+    DAffineCipher(str, STR_LENGTH, KEYONE, KEYTWO);
     printf("%s\n", str);
     
     return 0;
 }
 
-char *AffineCipther(char *str, int str_size, int keyone, int keytwo)
+char *AffineCipher(char *str, int str_size, int keyone, int keytwo)
 {
     int i; int tmp;
     
@@ -63,7 +63,7 @@ char *AffineCipther(char *str, int str_size, int keyone, int keytwo)
     return str;
 }
 
-char *DAffineCipther (char *str, int str_size, int keyone, int keytwo)
+char *DAffineCipher (char *str, int str_size, int keyone, int keytwo)
 {
     int i; int tmp;
     
