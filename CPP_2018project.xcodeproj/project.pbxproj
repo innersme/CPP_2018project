@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89D41240209C3A120017C96B /* DES.c in Sources */ = {isa = PBXBuildFile; fileRef = 89D4123F209C3A120017C96B /* DES.c */; };
+		89127E2C20B5671F00D0716A /* OSP_hw5.c in Sources */ = {isa = PBXBuildFile; fileRef = 89127E2B20B5671F00D0716A /* OSP_hw5.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,11 +23,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		89127E2B20B5671F00D0716A /* OSP_hw5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OSP_hw5.c; sourceTree = "<group>"; };
 		89168EFB207613DC002977AB /* CPP_2018project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP_2018project; sourceTree = BUILT_PRODUCTS_DIR; };
 		89168F0C20763AB5002977AB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		89168F0D20763B2B002977AB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		89D4123F209C3A120017C96B /* DES.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DES.c; sourceTree = "<group>"; };
-		89D41241209C5FA30017C96B /* IPIIP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPIIP.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +61,7 @@
 		89168EFD207613DC002977AB /* CPP_2018project */ = {
 			isa = PBXGroup;
 			children = (
-				89D4123F209C3A120017C96B /* DES.c */,
-				89D41241209C5FA30017C96B /* IPIIP.h */,
+				89127E2B20B5671F00D0716A /* OSP_hw5.c */,
 			);
 			path = CPP_2018project;
 			sourceTree = "<group>";
@@ -125,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D41240209C3A120017C96B /* DES.c in Sources */,
+				89127E2C20B5671F00D0716A /* OSP_hw5.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
