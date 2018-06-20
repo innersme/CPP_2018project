@@ -29,13 +29,12 @@ int main()
     Phone book[MAX];
     printf("전화번호관리\n\n");
     
-    
     while (1) {
         printf("1. 등록   2. 전체검색 3. 특정인검색    4. 제거   5.종료\n");
-        printf("메뉴 선택:"); scanf("%d", &menu);
+        printf("메뉴 선택: "); scanf("%d", &menu);
         switch (menu) {
             case 1:
-                printf("비밀번호:");
+                printf("비밀번호: ");
                 while (scanf("%s", pwd)) {
                     if (!strcmp(pwd, "qwer1234")) {
                         break;
@@ -82,10 +81,8 @@ int main()
 void RegisterP(Phone phone[])
 {
     printf("등록할 이름: "); scanf("%s",phone[size].name);
-    while(getchar() != '\n');
     printf("전화번호: "); scanf("%s",phone[size].number);
-    while(getchar() != '\n');
-    printf("정보 등록 완료!\n");
+    printf("%s님, 정보 등록 완료!\n", phone[size].name);
     size++;
 }
 
